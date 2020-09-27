@@ -6,7 +6,7 @@ from ApiForGetClassTime import get_class_time
 
 
 
-soup=bs(open("output1.html",encoding="utf-8"),"lxml")
+# soup=bs(open("output1.html",encoding="utf-8"),"lxml")
 def parse_to_json(soup):
     col =soup.find_all('tr')
     title=[]

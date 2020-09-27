@@ -14,7 +14,7 @@ def check(data):
     if data["summary"].find("假開始")!=-1:
         return data
 def get_vacation_start_date():
-    parm={"key":"{replace with you own api key}","timeMin":now_datetime.isoformat("T"),"timeMax":(now_datetime+datetime.timedelta(days=6*30)).isoformat("T")}
+    parm={"key":"${APIKEY}","timeMin":now_datetime.isoformat("T"),"timeMax":(now_datetime+datetime.timedelta(days=6*30)).isoformat("T")}
     resp=requests.get("https://www.googleapis.com/calendar/v3/calendars/ncu.acad@gmail.com/events",params=parm)
     
     data=resp.json()

@@ -5,8 +5,9 @@
 
 ### Prepare Before Use It
 * [Apply Google Calendar api](https://console.developers.google.com/apis/library/calendar-json.googleapis.com)
-    1. Download `credentails.json`
+    1. Download `credentails.json` (From OAUTH Client ID)
     2. Put in the same directory with these file
+    3. Replace ${APIKEY} in googlecalender.py with your own api key
 * [Apply NCU OAuth Token](https://api.cc.ncu.edu.tw/manage/developer/client/create)
     1. Save Api Token as `api_token`
 * Directory 
